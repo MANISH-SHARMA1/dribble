@@ -27,7 +27,9 @@ app.use(
 
 app.use("/auth", authRoute);
 
-app.post("/");
+app.get("/", (req, res) => {
+  res.send("Ok from server")
+});
 
 const PORT = 4000;
 
