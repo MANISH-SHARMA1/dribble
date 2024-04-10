@@ -1,5 +1,6 @@
 {
   "version": 2,
-
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "name": "team-server",
+  "builds": [{ "src": "*.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/" }]
 }
